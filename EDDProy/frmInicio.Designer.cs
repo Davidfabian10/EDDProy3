@@ -38,6 +38,15 @@ namespace EDDemo
             this.arbolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.algoritmosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metodosDeOrdenammientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.internosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.externosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.burbujaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quicksortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.shellsortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.radixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.intercalacionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mezclaDirectaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mezclaNaturalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +61,7 @@ namespace EDDemo
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(684, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(598, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -109,15 +118,87 @@ namespace EDDemo
             // 
             // metodosDeOrdenammientoToolStripMenuItem
             // 
+            this.metodosDeOrdenammientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.internosToolStripMenuItem,
+            this.externosToolStripMenuItem});
             this.metodosDeOrdenammientoToolStripMenuItem.Name = "metodosDeOrdenammientoToolStripMenuItem";
-            this.metodosDeOrdenammientoToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.metodosDeOrdenammientoToolStripMenuItem.Text = "Metodos de Ordenammiento";
+            this.metodosDeOrdenammientoToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.metodosDeOrdenammientoToolStripMenuItem.Text = "Metodos de Ordenación";
+            this.metodosDeOrdenammientoToolStripMenuItem.Click += new System.EventHandler(this.metodosDeOrdenammientoToolStripMenuItem_Click);
+            // 
+            // internosToolStripMenuItem
+            // 
+            this.internosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.burbujaToolStripMenuItem,
+            this.quicksortToolStripMenuItem,
+            this.shellsortToolStripMenuItem,
+            this.radixToolStripMenuItem});
+            this.internosToolStripMenuItem.Name = "internosToolStripMenuItem";
+            this.internosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.internosToolStripMenuItem.Text = "Internos";
+            // 
+            // externosToolStripMenuItem
+            // 
+            this.externosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.intercalacionToolStripMenuItem1,
+            this.mezclaDirectaToolStripMenuItem,
+            this.mezclaNaturalToolStripMenuItem});
+            this.externosToolStripMenuItem.Name = "externosToolStripMenuItem";
+            this.externosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.externosToolStripMenuItem.Text = "Externos";
+            // 
+            // burbujaToolStripMenuItem
+            // 
+            this.burbujaToolStripMenuItem.Name = "burbujaToolStripMenuItem";
+            this.burbujaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.burbujaToolStripMenuItem.Text = "Burbuja";
+            this.burbujaToolStripMenuItem.Click += new System.EventHandler(this.burbujaToolStripMenuItem_Click);
+            // 
+            // quicksortToolStripMenuItem
+            // 
+            this.quicksortToolStripMenuItem.Name = "quicksortToolStripMenuItem";
+            this.quicksortToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quicksortToolStripMenuItem.Text = "Quicksort";
+            this.quicksortToolStripMenuItem.Click += new System.EventHandler(this.quicksortToolStripMenuItem_Click);
+            // 
+            // shellsortToolStripMenuItem
+            // 
+            this.shellsortToolStripMenuItem.Name = "shellsortToolStripMenuItem";
+            this.shellsortToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.shellsortToolStripMenuItem.Text = "Shellsort";
+            this.shellsortToolStripMenuItem.Click += new System.EventHandler(this.shellsortToolStripMenuItem_Click);
+            // 
+            // radixToolStripMenuItem
+            // 
+            this.radixToolStripMenuItem.Name = "radixToolStripMenuItem";
+            this.radixToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.radixToolStripMenuItem.Text = "Radix";
+            this.radixToolStripMenuItem.Click += new System.EventHandler(this.radixToolStripMenuItem_Click);
+            // 
+            // intercalacionToolStripMenuItem1
+            // 
+            this.intercalacionToolStripMenuItem1.Name = "intercalacionToolStripMenuItem1";
+            this.intercalacionToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.intercalacionToolStripMenuItem1.Text = "Intercalacion";
+            this.intercalacionToolStripMenuItem1.Click += new System.EventHandler(this.intercalacionToolStripMenuItem1_Click);
+            // 
+            // mezclaDirectaToolStripMenuItem
+            // 
+            this.mezclaDirectaToolStripMenuItem.Name = "mezclaDirectaToolStripMenuItem";
+            this.mezclaDirectaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mezclaDirectaToolStripMenuItem.Text = "Mezcla Directa";
+            // 
+            // mezclaNaturalToolStripMenuItem
+            // 
+            this.mezclaNaturalToolStripMenuItem.Name = "mezclaNaturalToolStripMenuItem";
+            this.mezclaNaturalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mezclaNaturalToolStripMenuItem.Text = "Mezcla Natural";
             // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 389);
+            this.ClientSize = new System.Drawing.Size(598, 389);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -142,6 +223,15 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem arbolesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem algoritmosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem metodosDeOrdenammientoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem internosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem burbujaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quicksortToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem shellsortToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem radixToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem externosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem intercalacionToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem mezclaDirectaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mezclaNaturalToolStripMenuItem;
     }
 }
 

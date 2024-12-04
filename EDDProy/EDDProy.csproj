@@ -104,6 +104,41 @@
       <DependentUpon>frmPilas.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
+    <Compile Include="Metodos de Ordenación\Burbuja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Ordenación\Burbuja.Designer.cs">
+      <DependentUpon>Burbuja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Ordenación\Clases\Burbuja.cs" />
+    <Compile Include="Metodos de Ordenación\Clases\Intercalacion.cs" />
+    <Compile Include="Metodos de Ordenación\Clases\QuickSort.cs" />
+    <Compile Include="Metodos de Ordenación\Clases\Radixsort.cs" />
+    <Compile Include="Metodos de Ordenación\Clases\Shellsort.cs" />
+    <Compile Include="Metodos de Ordenación\Intercalacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Ordenación\Intercalacion.Designer.cs">
+      <DependentUpon>Intercalacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Ordenación\Quicksort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Ordenación\Quicksort.Designer.cs">
+      <DependentUpon>Quicksort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Ordenación\Radixsort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Ordenación\Radixsort.Designer.cs">
+      <DependentUpon>Radixsort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Ordenación\Shellsort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Ordenación\Shellsort.Designer.cs">
+      <DependentUpon>Shellsort.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
@@ -117,6 +152,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras Lineales\frmPilas.resx">
       <DependentUpon>frmPilas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Ordenación\Burbuja.resx">
+      <DependentUpon>Burbuja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Ordenación\Intercalacion.resx">
+      <DependentUpon>Intercalacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Ordenación\Quicksort.resx">
+      <DependentUpon>Quicksort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Ordenación\Radixsort.resx">
+      <DependentUpon>Radixsort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Ordenación\Shellsort.resx">
+      <DependentUpon>Shellsort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
