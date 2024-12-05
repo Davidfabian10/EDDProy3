@@ -18,13 +18,13 @@ namespace EDDemo.Forms
         {
             if (!int.TryParse(txtClave.Text, out int clave))
             {
-                MessageBox.Show("Por favor, ingresa una clave válida (número entero)", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese una clave válida, número entero", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(txtValor.Text))
             {
-                MessageBox.Show("Por favor, ingresa un valor válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese un valor válido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
