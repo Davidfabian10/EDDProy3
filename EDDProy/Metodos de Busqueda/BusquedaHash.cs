@@ -46,7 +46,7 @@ namespace EDDemo.Forms
         {
             if (!int.TryParse(txtClaveBuscar.Text, out int clave))
             {
-                MessageBox.Show("Por favor, ingresa una clave válida para buscar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese una clave para buscar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
