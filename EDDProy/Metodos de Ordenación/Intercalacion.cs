@@ -20,7 +20,7 @@ namespace EDDemo.Forms
         {
             if (string.IsNullOrWhiteSpace(txtNumeros.Text))
             {
-                MessageBox.Show("Por favor, ingresa una lista de números separados por comas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese una lista de números separados por comas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -42,7 +42,7 @@ namespace EDDemo.Forms
             }
             catch (FormatException)
             {
-                MessageBox.Show("Por favor, asegúrate de ingresar solo números separados por comas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese solo números separados por comas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

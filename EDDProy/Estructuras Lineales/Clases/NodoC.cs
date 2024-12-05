@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace EDDemo
 {
-    class Nodo
+    class NodoCircular
     {
         private int dato;
-        private Nodo siguiente;
-        private Nodo atras;
+        private NodoCircular siguiente;
 
         public int Dato
         {
@@ -18,18 +17,10 @@ namespace EDDemo
             set { dato = value; }
         }
 
-        public Nodo Siguiente
+        public NodoCircular Siguiente
         {
             get { return siguiente; }
             set { siguiente = value; }
-
-        }
-
-        public Nodo Atras
-        {
-            get { return atras; }
-            set { atras = value; }
-
         }
     }
 }

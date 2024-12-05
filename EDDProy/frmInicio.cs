@@ -31,9 +31,9 @@ namespace EDDemo
 
         private void pilasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPilas mPilas = new frmPilas();
-            mPilas.MdiParent = this;
-            mPilas.Show();
+            FormPila mPila = new FormPila();
+            mPila.MdiParent = this;
+            mPila.Show();
         }
 
         private void estructurasLinealesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -89,6 +89,95 @@ namespace EDDemo
             frmRadixSort mRadixSort = new frmRadixSort();
             mRadixSort.MdiParent = this;
             mRadixSort.Show();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void binarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBusquedaBinaria mBusquedaBinaria = new frmBusquedaBinaria();
+            mBusquedaBinaria.MdiParent = this;
+            mBusquedaBinaria.Show();
+        }
+
+        private void hashToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBusquedaHash mBusquedaHash = new frmBusquedaHash();
+            mBusquedaHash.MdiParent = this;
+            mBusquedaHash.Show();
+        }
+
+        private void busquedaBinariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormBusquedaBinaria mBusquedaBinaria = new FormBusquedaBinaria();
+            mBusquedaBinaria.MdiParent = this;
+            mBusquedaBinaria.Show();
+        }
+
+        private void exponenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormExponente mExponente = new FormExponente();
+            mExponente.MdiParent = this;
+            mExponente.Show();
+        }
+
+        private void factorialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormFactorial mFactorial = new FormFactorial();
+            mFactorial.MdiParent = this;
+            mFactorial.Show();
+        }
+
+        private void sumarArregloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormSumarArreglo mSumarArreglo = new FormSumarArreglo();
+            mSumarArreglo.MdiParent = this;
+            mSumarArreglo.Show();
+        }
+
+        private void torresDeHanoiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTorresHanoi mTorresHanoi = new FormTorresHanoi();
+            mTorresHanoi.MdiParent = this;
+            mTorresHanoi.Show();
+        }
+
+        private void fibonacciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormFibonacci mFibonacci = new FormFibonacci();
+            mFibonacci.MdiParent = this;
+            mFibonacci.Show();
+        }
+
+        private void colasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCola mCola = new FormCola();
+            mCola.MdiParent = this;
+            mCola.Show();
+        }
+
+        private void simplesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListasSimples mListasSimples = new FormListasSimples();
+            mListasSimples.MdiParent = this;
+            mListasSimples.Show();
+        }
+
+        private void doblesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListasDobles mListasDobles = new FormListasDobles();
+            mListasDobles.MdiParent = this;
+            mListasDobles.Show();
+        }
+
+        private void circularesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListaCircular mListaCircular = new FormListaCircular();
+            mListaCircular.MdiParent = this;
+            mListaCircular.Show();
         }
     }
 }
